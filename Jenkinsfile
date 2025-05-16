@@ -1,11 +1,11 @@
 pipeline {
     agent any
-    environment(
+    environment{
         harborUser = "admin"
         harborPasswd = "Harbor12345"
         harborHostname = "harbormytest.com"
         harborRepo = "library"
-    )
+    }
     stages {
         stage('git') {
             steps {
